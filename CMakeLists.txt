@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(AlgoritmosBusqueda22018)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(AlgoritmosBusqueda22018 main.cpp busquedasecuencial/BusquedaSecuencial.cpp busquedasecuencial/BusquedaSecuencial.h busquedabinaria/BusquedaBinaria.cpp busquedabinaria/BusquedaBinaria.h)
