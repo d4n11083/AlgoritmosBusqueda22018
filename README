@@ -1,0 +1,13 @@
+En este repositorio se encuentran los algoritmos de Búsqueda utilizados en el curso de Algoritmos y Estructuras
+de Datos 2.
+
+Algoritmos Actuales:
+    • Búsqueda Binaria
+    • Búsqueda Secuencial
+    • Búsqueda por Interpolación
+
+
+Estos algoritmos pueden ser accesados por el menú de consola que se encuentra en el main.
+Cada algoritmo recibe un puntero a una lista de elementos, y el valor a buscar.
+Cada algoritmo se encuentra en su respectivo Directorio.
+
