@@ -1,5 +1,7 @@
-     //
-// Created by d4n11083 on 29/08/18.
-//
-
 #include "BusquedaBinaria.h"
+
+void BusquedaBinaria::buscar() {
+
+
+
+}
