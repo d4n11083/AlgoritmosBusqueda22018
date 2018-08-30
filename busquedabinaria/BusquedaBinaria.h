@@ -5,38 +5,30 @@
 #ifndef ALGORITMOSBUSQUEDA22018_BUSQUEDABINARIA_H
 #define ALGORITMOSBUSQUEDA22018_BUSQUEDABINARIA_H
 
+#include "iostream"
 
 class BusquedaBinaria {
+
 private:
-    int *final = nullptr;
-    int *medio = nullptr;
-    int *inicio = nullptr;
+    int final;
+    int medio;
+    int inicio;
     int tamanoArray = 0;
     int valorBuscar = 0;
+    int *array = nullptr;
 
 public:
 
     BusquedaBinaria( int arr[], int pTamanoArray, int pValorBuscar ){
+        array = arr;
         tamanoArray = pTamanoArray;
         valorBuscar = pValorBuscar;
-        inicio = arr;
-        final = arr + (pTamanoArray - 1);
-
-        if( tamanoArray % 2 == 0  ){
-            medio = arr + ( (tamanoArray/2) - 1);
-        }else{
-            medio = arr + ( tamanoArray/2 );
-        }
-
+        inicio = 0;
+        final = pTamanoArray - 1;
+        medio = ( inicio + final ) /2;
     }
 
-    ~BusquedaBinaria(){
-        delete( final );
-        delete( medio );
-        delete( inicio );
-    }
-
-    void buscar();
+    std::string buscar();
 
 };
 
